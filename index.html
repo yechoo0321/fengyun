@@ -127,8 +127,8 @@ tick();</script>
 <span class="label primary rounded outline">带有机器昵称自动回复</span>
 </div></div>
 <div class="item">
-<div class="title"><span style="font-size:16px;color:#E53333;"><span style="background-color:#FFE500;">注释：蓝色字体代表机器人操作口令，
-任何口令都不需要艾特机器人直接发即可！</span><span style="background-color:#FFE500;"></span></span></div>
+<div class="title"><span style="font-size:16px;color:#E53333;"><span style="background-color:#CCFFCC;">注释：蓝色字体代表机器人操作口令，
+任何口令都不需要艾特机器人直接发即可！</span><span style="background-color:#CCFFCC;"></span></span></div>
 </div>
 <div class="item">
 <div class="title"><span class="label primary rounded">关闭功能</span> 禁用当前群的AI助手，会关闭入群欢迎</div><span class="label blue rounded">超管</span></div>
@@ -567,11 +567,13 @@ createSnow('src/', 60);
 // 社会主义核心价值观
 var a_idx = 0;
     $("body").click(function(e) {
-        var a = new Array(
-            "富强", "民主", "文明", "和谐",
-            "自由", "平等", "公正", "法治",
-            "爱国", "敬业", "诚信", "友善"
-            );
+        // var a = new Array(
+        //     "富强", "民主", "文明", "和谐",
+        //     "自由", "平等", "公正", "法治",
+        //     "爱国", "敬业", "诚信", "友善"
+        //     );
+		var a = new Array("WWTEJI");
+
         var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
         var x = e.pageX,
