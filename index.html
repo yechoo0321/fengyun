@@ -641,6 +641,33 @@ a:hover{
 <div class="tooltips">
 
 <audio loop="" src="http://music.163.com/song/media/outer/url?id=1327781623.mp3" id="audio" autoplay="" preload="auto">该浏览器不支持audio属性</audio>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
+ <script>
+    window.onload = function(){
+      function autoPlayAudio() {
+            wx.config({
+                 wx.ready
+                debug: false
+                , appId: ''
+                , timestamp: 1
+                , nonceStr: ''
+                , signature: ''
+                , jsApiList: []
+            });
+            wx.ready(function () {
+              document.getElementById("bgmusic").play();
+            });
+        }
+    autoPlayAudio();
+  }
+  </script>
+
+
+
+
+
+
+
 <script type="text/javascript">
 //--创建页面监听，等待微信端页面加载完毕 触发音频播放
 document.addEventListener('DOMContentLoaded', function () {
